@@ -1,14 +1,40 @@
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
-   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-   crossorigin=""/>
-   
-   <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
-   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-   crossorigin=""></script>
-   
-   <div id="mapid"></div>
-   
-   #mapid { height: 180px; }
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+ <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+ <title>Leaflet Web Map</title>
+
+<style>
+ #map {
+  width: 960px;
+  height: 500px;
+ }
+</style>
+
+</head>
+
+<body>
+ <div id="map"></div>
+
+<script>
+    var map = L.map('map',{
+    center: [43.64701, -79.39425],
+    zoom: 15
+    });
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+</script>
+
+</body>
+
+</html>
    
    
