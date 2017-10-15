@@ -29,12 +29,7 @@
 
     var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
-    L.tileLayer('mapbox://styles/annaheckadon/cj8ormnf890o52snwvcuqmjqc', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoiYW5uYWhlY2thZG9uIiwiYSI6ImNqOHJ4NHM0YTAydGEyd280bnkxcXR5N3QifQ.7ZQzNCXyC667A36ih1jKvg'
-}).addTo(mymap);
+    L.mapbox.styleLayer('mapbox://styles/annaheckadon/cj8ormnf890o52snwvcuqmjqc').addTo(mymap);
 
 </script> 
 </body>
