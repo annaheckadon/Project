@@ -39,6 +39,15 @@
     marker.bindPopup("<b>Hello world!</b><br>I am a popup."); 
     
  
+    var overlay = new L.ImageOverlay("https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg", bounds, {
+     opacity: 0.5
+    });
+    map.addLayer(overlay);
+
+    L.DomEvent.on(overlay._image, 'click', function(e) {
+     console.log(e)
+})
+ 
     
 
 </script> 
