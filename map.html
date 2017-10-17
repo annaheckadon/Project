@@ -35,20 +35,14 @@
     var mymap = L.mapbox.map('mapid').setView([39.8283, -98.5795], 2);    
     L.mapbox.styleLayer('mapbox://styles/annaheckadon/cj8tbnu1od9gn2smfmg1ca67k').addTo(mymap);
     
-    var marker = L.marker([51.5, -0.09]).addTo(mymap);
-    marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br><a href='https://www.instagram.com/p/BaIwt5Qj_HK/?taken-by=banana_anna_xp'>Click here to see the image on Instagram!</a>"); 
- 
-   
-    
-    function onMarkerClick(e) {
-     mymap.flyTo([51.5, -0.09], 15);
-    }
-//    function onSecondMarkerClick(e) {
-//     mymap.setView([39.8283, -98.5795], 2);
-//    }
+    var marker = L.marker([41.3851, -2.1734]).addTo(mymap);
+    marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br><a href='https://www.instagram.com/p/BaU0r2ch_PH/?taken-by=gabrielalesnianska'>Click here to see the image on Instagram!</a>"); 
 
+ 
+    function onMarkerClick(e) {
+     mymap.flyTo([41.3851, -2.1734], 15);
+    }
     marker.on('click', onMarkerClick);
-//    marker.on('click', onSecondMarkerClick);
 
 </script> 
 </body>
