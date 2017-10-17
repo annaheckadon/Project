@@ -35,22 +35,12 @@
     var mymap = L.mapbox.map('mapid').setView([39.8283, -98.5795], 2);    
     L.mapbox.styleLayer('mapbox://styles/annaheckadon/cj8tbnu1od9gn2smfmg1ca67k').addTo(mymap);
     
-    var marker = new L.LatLng(51.5, -0.09); 
+    var marker = L.marker([51.5, -0.09]).addTo(mymap);
     marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br><a href='https://www.instagram.com/p/BaIwt5Qj_HK/?taken-by=banana_anna_xp'>Click here to see the image on Instagram!</a>"); 
  
-    function addMarker() {
-     L.marker(marker)
-     .on('click', function() {
-      centerLeafletMapOnMarker(mymap, this);
-     })
-     .addTo(mymap);
-    }
-
-    function centerLeafletMapOnMarker(mymap, marker) {
-     var latLngs = [ marker.getLatLng() ];
-     var markerBounds = L.latLngBounds(latLngs);
-     mymap.fitBounds(markerBounds);
-    }
+    marker.on('click', function(e){
+    map.setView(e.latlng, 13);
+    });
 
 </script> 
 </body>
