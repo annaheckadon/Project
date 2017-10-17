@@ -38,7 +38,11 @@
     var marker = L.marker([51.5, -0.09]).addTo(mymap);
     marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br><a href='https://www.instagram.com/p/BaIwt5Qj_HK/?taken-by=banana_anna_xp'>Click here to see the image on Instagram!</a>"); 
  
-    
+    map.on('popupopen', function(centerMarker) {
+        var cM = map.project(centerMarker.popup._latlng);
+        cM.y -= centerMarker.popup._container.clientHeight/2
+        map.setView(map.unproject(cM),16, {animate: true});
+    });
 
 </script> 
 </body>
