@@ -39,7 +39,7 @@
     marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br><a href='https://www.instagram.com/p/BaIwt5Qj_HK/?taken-by=banana_anna_xp'>Click here to see the image on Instagram!</a>"); 
  
     marker.on('click', function(e) {
-     mymap.flyTo([51.5,-0.09], 15);
+     mymap.flyTo(e.latlng, 15);
     }
 
 </script> 
