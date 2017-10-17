@@ -38,7 +38,9 @@
     var marker = L.marker([51.5, -0.09]).addTo(mymap);
     marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br><a href='https://www.instagram.com/p/BaIwt5Qj_HK/?taken-by=banana_anna_xp'>Click here to see the image on Instagram!</a>"); 
  
-    mymap.flyTo([51.5,-0.09], 12);
+    map.on('click', function(e) {
+     mymap.flyTo([51.5,-0.09], 15);
+    }
 
 </script> 
 </body>
