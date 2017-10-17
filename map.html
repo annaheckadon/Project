@@ -43,7 +43,8 @@
      var markerBounds = L.latLngBounds(latLngs);
      mymap.fitBounds(markerBounds);
     }
-    .on('click', function() {
+    function zoomMarker() {
+     .on('click', function() {
       centerLeafletMapOnMarker(map, this);
     })
     .addTo(map);
