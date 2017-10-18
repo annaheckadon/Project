@@ -88,7 +88,34 @@
  
   
     //marker6
-    
+    var marker6 = L.marker([-3.3869, 36.6830]).addTo(mymap);
+    marker6.bindPopup("<q>My Tanzania Experience ...</q> <a href='https://www.instagram.com/p/BaW54o1hmKg/?taken-by=travelbuzzfever'>Click to see the memory on Instagram!</a>"); 
+ 
+    function onMarker6Click(e) {
+     mymap.flyTo([-3.3869, 36.6830], 10); 
+    }
+    marker6.on('click', onMarker6Click);
+ 
+ 
+    //marker7
+    var marker7 = L.marker([49.1144, 2.3932]).addTo(mymap);
+    marker7.bindPopup("<q>Sherwood parc ...</q> <a href='https://www.instagram.com/p/BaW53o6F4Bf/?taken-by=agathe_mzs'>Click to see the memory on Instagram!</a>"); 
+ 
+    function onMarker7Click(e) {
+     mymap.flyTo([49.1144, 2.3932], 10); 
+    }
+    marker7.on('click', onMarker7Click);
+ 
+    //marker8
+    var marker8 = L.marker([33.7341225, -84.3989019]).addTo(mymap);
+    marker8.bindPopup("<q>And then this happened! This wonderful human graced our booth with her presence! ...</q> <a href='https://www.instagram.com/p/BaW529uFUBU/?taken-by=stuzoclothing'>Click to see the memory on Instagram!</a>"); 
+ 
+    function onMarker8Click(e) {
+     mymap.flyTo([33.7341225, -84.3989019], 10); 
+    }
+    marker8.on('click', onMarker8Click);
+ 
+ 
  
  
 </script> 
