@@ -34,7 +34,8 @@
     L.mapbox.accessToken = 'pk.eyJ1IjoiYW5uYWhlY2thZG9uIiwiYSI6ImNqOHJ4NHM0YTAydGEyd280bnkxcXR5N3QifQ.7ZQzNCXyC667A36ih1jKvg';
     var mymap = L.mapbox.map('mapid').setView([39.8283, -98.5795], 2);    
     L.mapbox.styleLayer('mapbox://styles/annaheckadon/cj8tbnu1od9gn2smfmg1ca67k').addTo(mymap);
-    
+ 
+ 
     //marker 1
     var marker = L.marker([41.3851, 2.1734]).addTo(mymap);
     marker.bindPopup("<q>When we bought the interrail ticket with @sebastian_awesome_monroy in march, we were extremely excited and a bit scared at the same time, in June we started to think <q>okey so how will we do it?!</q>, in the beginning of August we both knew that it's time to pack the backpacks and start ...</q> <a href='https://www.instagram.com/p/BaU0r2ch_PH/?taken-by=gabrielalesnianska'>Click to see the memory on Instagram!</a>"); 
@@ -44,6 +45,7 @@
      mymap.flyTo([41.3851, 2.1734], 10);
     }
     marker.on('click', onMarkerClick);
+
  
     //marker 2
     var marker2 = L.marker([44.8378, -0.5792]).addTo(mymap);
@@ -54,6 +56,7 @@
     }
     marker2.on('click', onMarker2Click); 
  
+ 
     //marker3
     var marker3 = L.marker([43.9252, 21.3735]).addTo(mymap);
     marker3.bindPopup("<q>#childhood #memories ...</q> <a href='https://www.instagram.com/p/BaW59ksAWNP/?taken-by=max_meyer_10'>Click to see the memory on Instagram!</a>");
@@ -63,10 +66,18 @@
     }
     marker3.on('click', onMarker3Click);
  
+ 
     //marker 4
-    
+    var marker4 = L.marker([40.7128, -74.0060]).addTo(mymap);
+    marker4.bindPopup("<q>... NYC ...</q> <a href='https://www.instagram.com/p/BaW569FhRYd/?taken-by=naifsadiahmom'>Click to see the memory on Instagram!</a>"); 
+ 
+    function onMarker4Click(e) {
+     mymap.flyTo([40.7128, -74.0060], 10); 
+    }
+    marker4.on('click', onMarker4Click);
  
  
+    //marker5
  
  
  
