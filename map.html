@@ -78,8 +78,17 @@
  
  
     //marker5
+    var marker5 = L.marker([37.0891, -8.2479]).addTo(mymap);
+    marker5.bindPopup("<q>Finding peace and inspiration ...</q> <a href='https://www.instagram.com/p/BaW55KkB3pb/?taken-by=giaco_jacky'>Click to see the memory on Instagram!</a>"); 
  
+    function onMarker5Click(e) {
+     mymap.flyTo([37.0891, -8.2479], 10); 
+    }
+    marker5.on('click', onMarker5Click);
  
+  
+    //marker6
+    
  
  
 </script> 
