@@ -37,7 +37,7 @@
     
     //marker 1
     var marker = L.marker([41.3851, 2.1734]).addTo(mymap);
-    marker.bindPopup("<b>Memory:</b> <q>When we bought the interrail ticket with @sebastian_awesome_monroy in march, we were extremely excited and a bit scared at the same time, in June we started to think <q>okey so how will we do it?!</q>, in the beginning of August we both knew that it's time to pack the backpacks and start ...</q> <a href='https://www.instagram.com/p/BaU0r2ch_PH/?taken-by=gabrielalesnianska'>Click to see the memory on Instagram!</a>"); 
+    marker.bindPopup("<q>When we bought the interrail ticket with @sebastian_awesome_monroy in march, we were extremely excited and a bit scared at the same time, in June we started to think <q>okey so how will we do it?!</q>, in the beginning of August we both knew that it's time to pack the backpacks and start ...</q> <a href='https://www.instagram.com/p/BaU0r2ch_PH/?taken-by=gabrielalesnianska'>Click to see the memory on Instagram!</a>"); 
 
  
     function onMarkerClick(e) {
@@ -47,14 +47,30 @@
  
     //marker 2
     var marker2 = L.marker([44.8378, -0.5792]).addTo(mymap);
-    marker2.bindPopup("<b>Memory:</b> <q>An other door of bordeaux ...</q> <a href='https://www.instagram.com/p/BaW59k-DYiz/?taken-by=lisebgv'>Click to see the memory on Instagram!</a>");
+    marker2.bindPopup("<q>An other door of bordeaux ...</q> <a href='https://www.instagram.com/p/BaW59k-DYiz/?taken-by=lisebgv'>Click to see the memory on Instagram!</a>");
 
     function onMarker2Click(e) {
      mymap.flyTo([44.8378, -0.5792], 10); 
     }
     marker2.on('click', onMarker2Click); 
  
+    //marker3
+    var marker3 = L.marker([43.9252, 21.3735]).addTo(mymap);
+    marker3.bindPopup("<q>#childhood #memories ...</q> <a href='https://www.instagram.com/p/BaW59ksAWNP/?taken-by=max_meyer_10'>Click to see the memory on Instagram!</a>");
+
+    function onMarker3Click(e) {
+     mymap.flyTo([43.9252, 21.3735], 10); 
+    }
+    marker3.on('click', onMarker3Click);
+ 
+    //marker 4
     
+ 
+ 
+ 
+ 
+ 
+ 
 </script> 
 </body>
 
