@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
    <script>
-	$.ajax({ url: 'http://spaceweather.com/', success: function(data) { alert(data); } });
+	var links = document.getElementsByTagName("http://spaceweather.com/");
+for ( var i = 0; i < links.length; i++ ) {
+    alert( links[i].getAttribute("rel") + ' : ' + links[i].getAttribute("href") );        
+}
    </script>
 </html>
