@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
    <script>
-	var links = document.getElementsByTagName("http://spaceweather.com/");
-for ( var i = 0; i < links.length; i++ ) {
-    alert( links[i].getAttribute("rel") + ' : ' + links[i].getAttribute("href") );        
-}
+	$.get("www.mydomain.com/?url=www.google.com", function(response) { 
+    alert(response) 
+});
    </script>
 </html>
